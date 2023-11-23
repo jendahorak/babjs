@@ -7,8 +7,13 @@ console.log(canvas, engine);
 
 // create Scene
 const createScene = function () {
+  // Init Babylon scene object
   const scene = new BABYLON.Scene(engine);
+
   scene.createDefaultCameraOrLight(true, false, true);
+
+  // XR
+  const xr = scene.createDefaultXRExperienceAsync();
 
   // const box = new BABYLON.MeshBuilder.CreateBox();
 
@@ -50,8 +55,6 @@ const createScene = function () {
 };
 
 const scene = createScene();
-
-console.log(scene);
 
 engine.runRenderLoop(function () {
   scene.render();

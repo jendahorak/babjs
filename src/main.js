@@ -34,7 +34,7 @@ const createScene = function () {
   // });
 
   // Ground from heightmap
-  const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('ground', '/terrain/dmr_brno.png', {
+  const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('ground', './terrain/dmr_brno.png', {
     height: 10,
     width: 10,
     subdivisions: 300,
@@ -49,7 +49,7 @@ const createScene = function () {
 
   const groundFromHMMaterial = new BABYLON.StandardMaterial('ground');
   groundFromHMMaterial.roughness = 1;
-  groundFromHMMaterial.diffuseTexture = new BABYLON.Texture('/terrain/dmr_brno_colored.png');
+  groundFromHMMaterial.diffuseTexture = new BABYLON.Texture('./terrain/dmr_brno_colored.png');
 
   // ground.material.wireframe = true;
 

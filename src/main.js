@@ -41,6 +41,10 @@ const createScene = function () {
     maxHeight: 1,
   });
 
+  // make the ground receive shadows
+
+  ground;
+
   console.log(ground);
 
   const groundFromHMMaterial = new BABYLON.StandardMaterial('ground');
